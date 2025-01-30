@@ -21,8 +21,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "src/assets/images"),
-          to: path.resolve(__dirname, "dist/assets/images")
+          from: path.resolve(__dirname, "src/assets/fonts"),
+          to: path.resolve(__dirname, "dist/assets/fonts")
         }
       ]
     }),
@@ -39,11 +39,42 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        use: [
+          {
+            loader: 'responsive-loader',
+            options: {
+              sizes: [1920,767],
+              quality: 85,
+              placeholder: true,
+              outputPath: 'assets/images',
+              format: 'webp',
+              // If you want to enable sharp support:
+              adapter: require('responsive-loader/sharp'),
+              additionalPaths: [
+                {
+                  width: 0,
+                  format: 'webp',
+                  quality: 85,
+                  outputPath: 'assets/images',
+                },
+              ],
+            },
+          },
+          // {
+          //   loader: 'file-loader',
+          //   options: {
+
+          //   }
+          // }
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
         generator: {
-          filename: "assets/images/[name][ext]"
+          filename: "assets/fonts/[name][ext]"
         }
-      }        
+      },      
     ],
   },
 };

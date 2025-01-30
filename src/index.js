@@ -1,3 +1,4 @@
-import "./styles.css";
+import './styles.css';
+import './homepage.js';
 
 console.log("hi");
