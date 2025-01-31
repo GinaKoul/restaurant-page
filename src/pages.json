@@ -1,0 +1,226 @@
+[
+    {
+        "id":1,
+        "name": "homepage",
+        "title": "Where Every Bite is a Taste of Italian Enchantment",
+        "articleTitle": "Welcome to Il Forno Magico-A Taste of Italy's Heart & Soul",
+        "articleText1": "Step into Il Forno Magico, where every dish is crafted with passion, tradition, and a touch of magic. From our wood-fired pizzas with crispy, golden crusts to our handmade pasta infused with rich, authentic flavors, every bite transports you straight to the charming streets of Italy.",
+        "articleText2": "Our chefs use only the finesr ingredients, sun-ripened tomatoes, fragrant basil, and the creamiest mozzarella, to create dishes that are as unforgettable as they are delicious. Whether you are here for a cozy dinner, a celebration with loved ones, or a glass of our expertly selected Italian wines, you will feel the warmth of true Italian hospitality from the moment you walk in.",
+        "articleText3": "Buon appetito! Let the magic of Il Forno Magico enchant your taste buds."
+    },
+    {
+        "id": 2,
+        "name": "categories",
+        "title": "",
+        "subpages": [
+            {
+                "id": 21,
+                "title": "Antipasti (Appetizers)",
+                "subpages": [
+                    {
+                        "id": 211,
+                        "title": "Bruschetta al Pomodoro",
+                        "description": "Toasted bread topped with fresh tomatoes, basil and a drizzle of olive oil."
+                    },
+                    {
+                        "id": 212,
+                        "title": "Carpaccio di Manzo",
+                        "description": "Thinly slided raw beef with arugula, shaved parmesan and a lemon vinaigrette."
+                    },
+                    {
+                        "id": 213,
+                        "title": "Caprese",
+                        "description": "Fresh mozzarella, heirloom tomatoes, basil, and balsamic glaze."
+                    },
+                    {
+                        "id": 214,
+                        "title": "Frittura di Calamari",
+                        "description": "Crispy fried squid served with marinara sauce."
+                    }
+                ]
+            },
+            {
+                "id": 22,
+                "title": "Zuppe e Insalate (Soups and Salads)",
+                "subpages": [
+                    {
+                        "id": 221,
+                        "title": "Minestrone",
+                        "description": "Traditional Italian vegetable soup with seasonal ingredients."
+                    },
+                    {
+                        "id": 222,
+                        "title": "Zuppa di Pomodoro",
+                        "description": "Creamy tomato soup with a touch of basil and garlic."
+                    },
+                    {
+                        "id": 223,
+                        "title": "Insalata Mista",
+                        "description": "Mixed greens, cherry tomatoes, cucumbers, red onions, and olive oil dressing."
+                    },
+                    {
+                        "id": 224,
+                        "title": "Insalata Cesare",
+                        "description": "Classic Caesar salad with romaine, croutons, parmesan, and Caesar dressing."
+                    }
+                ]
+            },
+            {
+                "id": 23,
+                "title": "Pasta Fresca (Fresh Pasta)",
+                "subpages": [
+                    {
+                        "id": 231,
+                        "title": "Spaghetti alla Carbonara",
+                        "description": "Spaghetti with a creamy egg and pancetta sause, finished with pecorino cheese."
+                    },
+                    {
+                        "id": 232,
+                        "title": "Lasagna alla Bolognese",
+                        "description": "Layers of pasta with rich meat sauce, bechamel, and parmesan."
+                    },
+                    {
+                        "id": 233,
+                        "title": "Ravioli di Ricotta e Spinaci",
+                        "description": "Homemade ravioli stuffed with ricotta cheese and spinach, served with a sage-butter sauce."
+                    },
+                    {
+                        "id": 234,
+                        "title": "Tagliatelle ai Funghi",
+                        "description": "Fresh tagliatelle with sauteed wild mushrooms and a garlic cream sauce."
+                    }
+                ]
+            },
+            {
+                "id": 24,
+                "title": "Pizze (Pizzas)",
+                "subpages": [
+                    {
+                        "id": 241,
+                        "title": "Margharita",
+                        "description": "Tomato sauce, fresh mozzarella, and basil."
+                    },
+                    {
+                        "id": 242,
+                        "title": "Quattro Stagioni",
+                        "description": "Tomato sauce, mozzarella, artichokes, ham, olives, and mushrooms."
+                    },
+                    {
+                        "id": 243,
+                        "title": "Diavola",
+                        "description": "Tomato sauce, mozzarella, spicy salami, and red chili flakes."
+                    },
+                    {
+                        "id": 244,
+                        "title": "Funghi e Tartufo",
+                        "description": "Tomato sauce, mozzarella, wild mushrooms, and truffle oil."
+                    }
+                ]
+            },
+            {
+                "id": 25,
+                "title": "Piatti Principali (Main Courses)",
+                "subpages": [
+                    {
+                        "id": 251,
+                        "title": "Osso Buco",
+                        "description": "Braised veal shank in rich tomato sauce with a side of risotto."
+                    },
+                    {
+                        "id": 252,
+                        "title": "Pollo alla Parmigiana",
+                        "description": "Breaded chicken cutlet topped with marinara sauce and melted mozzarella, served with pasta."
+                    },
+                    {
+                        "id": 253,
+                        "title": "Branzino al Forno",
+                        "description": "Oven baked Mediterranean sea bass with lemon and rosemary, srved with roasted vegetables."
+                    },
+                    {
+                        "id": 254,
+                        "title": "Vitello Saltimbocca",
+                        "description": "Veal cutlets topped with prosciutto and sage, in a white wine sauce."
+                    }
+                ]
+            },
+            {
+                "id": 26,
+                "title": "Contorni (Side Dishes)",
+                "subpages": [
+                    {
+                        "id": 261,
+                        "title": "Patate al Rosmarino",
+                        "description": "Roasted rosemary potatoes."
+                    },
+                    {
+                        "id": 262,
+                        "title": "Spinaci Saltati",
+                        "description": "Sauteed spinach with garlic and olive oil."
+                    },
+                    {
+                        "id": 263,
+                        "title": "Verdure Grigliate",
+                        "description": "Grilled seasonal vegetables."
+                    },
+                    {
+                        "id": 264,
+                        "title": "Risotto ai Funghi",
+                        "description": "Creamy risotto with wild mushrooms."
+                    }
+                ]
+            },
+            {
+                "id": 27,
+                "title": "Dolci (Desserts)",
+                "subpages": [
+                    {
+                        "id": 271,
+                        "title": "Tiramisu",
+                        "description": "Classic Italian dessert with layers of coffe-soaked ladyfingers, mascarpone, and cocoa."
+                    },
+                    {
+                        "id": 272,
+                        "title": "Panna Cotta",
+                        "description": "Creamy vanilla custard topped with raspberry coulis."
+                    },
+                    {
+                        "id": 273,
+                        "title": "Cannoli Siciliani",
+                        "description": "Crispy shells filled with sweet ricotta cheese and chocolate chips."
+                    },
+                    {
+                        "id": 274,
+                        "title": "Gelato Artigianale",
+                        "description": "Selection of house-made gelato in flavors like vanilla, chocolate, and pistachio."
+                    }
+                ]
+            },
+            {
+                "id": 28,
+                "title": "Vini (Wines)",
+                "subpages": [
+                    {
+                        "id": 281,
+                        "title": "Chianti Classico",
+                        "description": "Medium-bodies red wine from Tuscany."
+                    },
+                    {
+                        "id": 282,
+                        "title": "Prosecco",
+                        "description": "Crisp and refreshing sparkling wine."
+                    },
+                    {
+                        "id": 283,
+                        "title": "Pinot Grigio",
+                        "description": "Light and refreshing white wine."
+                    },
+                    {
+                        "id": 284,
+                        "title": "Barolo",
+                        "description": "Bold red wine from the Piedmont region."
+                    }
+                ]
+            }
+        ]
+    }
+]
