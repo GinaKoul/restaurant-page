@@ -11,7 +11,10 @@
     {
         "id": 2,
         "name": "categories",
-        "title": "",
+        "title": "Authentic Italian Flavors, Crafted with Passion",
+        "articleTitle": "Benvenuti al Forno Magico!",
+        "articleText1": "At Il Forno Magico, we take pride in bringing the heart of Italy to your table. Each dish is crafted with the finest ingredients, passion, and time-honored recipes passed down through generations. From our handmade pastas to our wood-fired pizzas, every bite is a taste of authentic Italian tradition.",
+        "articleText2": "Whether you're here for casual meal or a special celebration, we hope to make your experience unforgettable. Buon Appetito!",
         "subpages": [
             {
                 "id": 21,

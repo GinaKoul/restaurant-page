@@ -1,8 +1,11 @@
-const heroImages = require('./assets/images/hero-image.jpg?sizes[]=767,sizes[]=1920');
-console.log(heroImages.srcSet);
+import pages from './pages.json';
 
 const Categories = (function(doc) {
-    let homepageContent = doc.querySelector('#content');
+    const categoriesContent = pages.find(obj => obj["id"]== 2);
+    const heroImages = require('./assets/images/hero-image.jpg?sizes[]=767,sizes[]=1920');
+    let mainContent = doc.querySelector('#content');
+
+    console.log(heroImages.srcSet);
 
     function createHeroSection() {
         // Create a container for hero content
@@ -20,7 +23,7 @@ const Categories = (function(doc) {
 
         // Create hero title
         let heroTitle = doc.createElement('h1');
-        heroTitle.textContent = 'Where Every Bite is a Taste of Italian Enchantment';
+        heroTitle.textContent = categoriesContent['title'];
 
         // Add the hero title to the text container
         heroText.appendChild(heroTitle);
@@ -44,35 +47,61 @@ const Categories = (function(doc) {
         return currentText;
     }
 
+    function createCard(category) {
+        let listItem = doc.createElement('li');
+        let cardWrapper = doc.createElement('figure');
+        let cardImage = doc.createElement('img');
+        let cardText = doc.createElement('figcaption');
+        listItem.id = category['id'];
+        listItem.classList.add('card');
+        let cardHeading = createHeading3(category['title']);
+        cardImage.setAttribute('srcset',heroImages.srcSet);
+        cardImage.setAttribute('src',heroImages.src);
+        cardImage.setAttribute('alt',heroImages.placeholder);
+        cardImage.setAttribute('sizes','(max-width: 676px) 676px, 1920px');
+        cardText.append(cardHeading);
+        cardWrapper.append(cardImage,cardText);
+        listItem.appendChild(cardWrapper);
+        return listItem;
+    }
+
+    function createCards() {
+        let cardList = doc.createElement('li');
+        cardList.classList.add('card-list','row-md-3');
+        let categoriesSubpages = categoriesContent['subpages'];
+        categoriesSubpages.forEach(category => {
+            let card = createCard(category);
+            cardList.appendChild(card);
+        });
+        return cardList;
+    }
+
     function createArticleContent() {
         // Create article container
         let articleWrapper = doc.createElement('article');
-        articleWrapper.classList.add('container','wmax-sm');
+        articleWrapper.classList.add('container');
 
         // Create article title
         let articleHeading = doc.createElement('h2');
-        articleHeading.textContent = `Welcome to Il Forno Magico-A Taste of Italy's Heart & Soul`;
+        articleHeading.textContent = categoriesContent['articleTitle'];
 
         // Create article text 1
-        let articleText1 = createParagraph('Step into Il Forno Magico, where every dish is crafted with passion, tradition, and a touch of magic. From our wood-fired pizzas with crispy, golden crusts to our handmade pasta infused with rich, authentic flavors, every bite transports you straight to the charming streets of Italy.');
+        let articleText1 = createParagraph(categoriesContent['articleText1']);
         
         // Create article text 2
-        let articleText2 = createParagraph('Our chefs use only the finesr ingredients, sun-ripened tomatoes, fragrant basil, and the creamiest mozzarella, to create dishes that are as unforgettable as they are delicious. Whether you are here for a cozy dinner, a celebration with loved ones, or a glass of our expertly selected Italian wines, you will feel the warmth of true Italian hospitality from the moment you walk in.')
-        
-        // Create article text 1
-        let articleText3 = createParagraph('Buon appetito! Let the magic of Il Forno Magico enchant your taste buds.');
+        let articleText2 = createParagraph(categoriesContent['articleText2']);
 
-        let categoryTitle1 = createHeading3('Antipasti');
+        let cardList = createCards();
 
         // Add content to article container
-        articleWrapper.append(articleHeading,articleText1,articleText2,articleText3);
+        articleWrapper.append(articleHeading,articleText1,articleText2,cardList);
 
         // Return article container
         return articleWrapper;
     }
 
     function addHomepageContent() {
-        homepageContent.append(createHeroSection(),createArticleContent());
+        mainContent.append(createHeroSection(),createArticleContent());
     }
 
     if (doc.readyState === 'loading') {

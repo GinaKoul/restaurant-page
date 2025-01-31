@@ -1,8 +1,9 @@
-const heroImages = require('./assets/images/hero-image.jpg?sizes[]=767,sizes[]=1920');
-console.log(heroImages.srcSet);
+import pages from './pages.json';
 
 const Homepage = (function(doc) {
-    let homepageContent = doc.querySelector('#content');
+    const homepageContent = pages.find(obj => obj["id"]== 1);
+    const heroImages = require('./assets/images/hero-image.jpg?sizes[]=767,sizes[]=1920');
+    let mainContent = doc.querySelector('#content');
 
     function createHeroSection() {
         // Create a container for hero content
@@ -20,7 +21,7 @@ const Homepage = (function(doc) {
 
         // Create hero title
         let heroTitle = doc.createElement('h1');
-        heroTitle.textContent = 'Where Every Bite is a Taste of Italian Enchantment';
+        heroTitle.textContent = homepageContent['title'];
 
         // Add the hero title to the text container
         heroText.appendChild(heroTitle);
@@ -45,16 +46,16 @@ const Homepage = (function(doc) {
 
         // Create article title
         let articleHeading = doc.createElement('h2');
-        articleHeading.textContent = `Welcome to Il Forno Magico-A Taste of Italy's Heart & Soul`;
+        articleHeading.textContent = homepageContent['articleTitle'];
 
         // Create article text 1
-        let articleText1 = createParagraph('Step into Il Forno Magico, where every dish is crafted with passion, tradition, and a touch of magic. From our wood-fired pizzas with crispy, golden crusts to our handmade pasta infused with rich, authentic flavors, every bite transports you straight to the charming streets of Italy.');
+        let articleText1 = createParagraph(homepageContent['articleText1']);
         
         // Create article text 2
-        let articleText2 = createParagraph('Our chefs use only the finesr ingredients, sun-ripened tomatoes, fragrant basil, and the creamiest mozzarella, to create dishes that are as unforgettable as they are delicious. Whether you are here for a cozy dinner, a celebration with loved ones, or a glass of our expertly selected Italian wines, you will feel the warmth of true Italian hospitality from the moment you walk in.')
+        let articleText2 = createParagraph(homepageContent['articleText2']);
         
         // Create article text 1
-        let articleText3 = createParagraph('Buon appetito! Let the magic of Il Forno Magico enchant your taste buds.');
+        let articleText3 = createParagraph(homepageContent['articleText3']);
 
         // Add content to article container
         articleWrapper.append(articleHeading,articleText1,articleText2,articleText3);
@@ -64,7 +65,7 @@ const Homepage = (function(doc) {
     }
 
     function addHomepageContent() {
-        homepageContent.append(createHeroSection(),createArticleContent());
+        mainContent.append(createHeroSection(),createArticleContent());
     }
 
     if (doc.readyState === 'loading') {
