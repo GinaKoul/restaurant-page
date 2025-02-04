@@ -226,6 +226,7 @@ header {
   text-decoration: none;
   font-size: 2em;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .logo:hover {
@@ -247,24 +248,8 @@ nav button {
   overflow-x: hidden;
 }
 
-nav button:before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--header-color);
-  transform: translateX(-100%);
-  transition: transform 0.3s linear;
-}
-
 nav button:hover {
   cursor: pointer;
-}
-
-nav button:hover:before {
-  transform: translateX(0);
 }
 
 /* Main Content */
@@ -298,7 +283,11 @@ p {
 }
 
 article {
-  padding-top: var(--article-top);
+  margin-top: var(--article-top);
+}
+
+.pt-h {
+  padding-top: var(--header-h);
 }
 
 /*Cards*/
@@ -317,13 +306,42 @@ article {
   transition: .3s ease-in-out;
 }
 
-.card:hover {
+.card.has-hover {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.card.has-hover:hover {
   cursor: pointer;
   background: var(--card-hover-bg);
 }
 
-.card figcaption {
-  margin: 8px 16px;
+.card {
+  margin-top: 24px;
+}
+
+.card:not(:has(figcaption)) {
+  padding: 8px 16px;
+}
+
+.card:not(:has(figcaption)) a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.card figcaption:not(:has(a)) {
+  padding: 8px 16px;
+}
+
+.card figcaption a {
+  padding: 8px 16px;
+  color: inherit;
+  display: inline-block;
+  width: calc(100% - (16px * 2));
+}
+
+.card a:hover {
+  text-decoration: none;
 }
 
 .card img {
@@ -354,6 +372,9 @@ footer a {
 }
 
 @media (max-width: 767px) {
+  .container {
+    max-width: var(--container-max-sm-mobile);
+  }
   .wmax-sm {
     max-width: var(--container-max-sm-mobile);
   }
@@ -375,7 +396,7 @@ footer a {
 
   /*Menu Mobile*/
 
-  nav {
+  nav.menu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -390,7 +411,7 @@ footer a {
     transition: transform 0.3s linear;
   }
   
-  nav button:not([data-menu="close"]) {
+  nav.menu button:not(.menu-close) {
     width: 100%;
     text-align: start;
     padding: 0.5rem 1rem;
@@ -398,13 +419,22 @@ footer a {
   
   }
   
-  nav button:not(:last-child):not([data-menu="close"]) {
+  nav.menu button:not(:last-child):not(.menu-close) {
     border-bottom: 1px solid var(--border-color);
   }
   
   .menu-open {
     color: currentColor;
     background: transparent;
+    border: 1px solid currentColor;
+    padding: 8px 16px;
+    transition: all 0.3s linear;
+  }
+
+  .menu-open:hover {
+    color: var(--header-bg);
+    background: var(--header-color);
+    border: 1px solid var(--header-color);
   }
   
   .menu-close {
@@ -415,12 +445,12 @@ footer a {
     cursor: pointer;
   }
   
-  [data-menu='open']:focus ~ nav {
+  .menu[data-menu='open'] {
     transform: translateX(0);
   }
-  
-  [data-menu='close']:focus ~ nav {
-    transform: translateX(100%);
+
+  nav button:hover {
+    text-decoration: underline;
   }
 
   /*Footer*/ 
@@ -446,12 +476,28 @@ footer a {
     font-size: var(--h5-desktop-font-size);
   }
 
-  /*Menu Mobile*/
+  /*Menu*/
 
   .menu-open, .menu-close {
     display: none;
     visibility: none;
     padding: 0;
+  }
+
+  nav button:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--header-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s linear;
+  }
+
+  nav button:hover:before {
+    transform: translateX(0);
   }
 
   /*Cards*/
@@ -464,6 +510,7 @@ footer a {
   .row-md-3 .card {
     flex: 0 0 calc(33.3% - (24px * 2 / 3));
     max-width: calc(33.3% - (24px * 2 / 3));
+    margin-top: 0;
   }
 
   /*Footer*/ 

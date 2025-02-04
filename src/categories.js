@@ -1,18 +1,22 @@
 import pages from './pages.json';
+import { Category } from './category.js';
 
 const Categories = (function(doc) {
     const categoriesContent = pages.find(obj => obj["id"]== 2);
-    const heroImages = require('./assets/images/hero-image.jpg?sizes[]=767,sizes[]=1920');
+    const heroImages = require(`${categoriesContent['imageSrc']}?sizes[]=500,sizes[]=1920`);
     let mainContent = doc.querySelector('#content');
 
-    console.log(heroImages.srcSet);
+    function loadCategory(categoryId) {
+        mainContent.innerHTML = null;
+        Category.load(categoryId);
+    }
 
     function createHeroSection() {
         // Create a container for hero content
         let heroWrapper = doc.createElement('section');
         heroWrapper.classList.add('hero-container');
         if(window.innerWidth <= 767) {
-            heroWrapper.style.setProperty('--hero-image',`url(${heroImages.images.find(image => image.width == 767).path})`);
+            heroWrapper.style.setProperty('--hero-image',`url(${heroImages.images.find(image => image.width == 500).path})`);
         }else {
             heroWrapper.style.setProperty('--hero-image',`url(${heroImages.images.find(image => image.width == 1920).path})`);
         }
@@ -52,13 +56,18 @@ const Categories = (function(doc) {
         let cardWrapper = doc.createElement('figure');
         let cardImage = doc.createElement('img');
         let cardText = doc.createElement('figcaption');
+        const cardImageFile = require(`${category['imageSrc']}?sizes[]=500,sizes[]=364`);
         listItem.id = category['id'];
-        listItem.classList.add('card');
+        listItem.setAttribute('data-id',category['id']);
+        listItem.classList.add('card','has-hover');
+        listItem.addEventListener('click', ()=>{
+            loadCategory(category['id']);
+        });
         let cardHeading = createHeading3(category['title']);
-        cardImage.setAttribute('srcset',heroImages.srcSet);
-        cardImage.setAttribute('src',heroImages.src);
-        cardImage.setAttribute('alt',heroImages.placeholder);
-        cardImage.setAttribute('sizes','(max-width: 676px) 676px, 1920px');
+        cardImage.setAttribute('srcset',cardImageFile.srcSet);
+        cardImage.setAttribute('src',cardImageFile.src);
+        cardImage.setAttribute('alt',cardImageFile.placeholder);
+        cardImage.setAttribute('sizes','(max-width: 676px) 500px, 364px');
         cardText.append(cardHeading);
         cardWrapper.append(cardImage,cardText);
         listItem.appendChild(cardWrapper);
@@ -66,7 +75,7 @@ const Categories = (function(doc) {
     }
 
     function createCards() {
-        let cardList = doc.createElement('li');
+        let cardList = doc.createElement('ol');
         cardList.classList.add('card-list','row-md-3');
         let categoriesSubpages = categoriesContent['subpages'];
         categoriesSubpages.forEach(category => {
@@ -100,13 +109,13 @@ const Categories = (function(doc) {
         return articleWrapper;
     }
 
-    function addHomepageContent() {
+    function addCategoriesContent() {
         mainContent.append(createHeroSection(),createArticleContent());
     }
 
-    if (doc.readyState === 'loading') {
-        doc.addEventListener('DOMContentLoaded', addHomepageContent);
-      } else {
-        addHomepageContent();
-      }
+    return {
+        load: addCategoriesContent
+    }
 })(document);
+
+export {Categories};

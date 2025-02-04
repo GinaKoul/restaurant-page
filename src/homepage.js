@@ -2,7 +2,7 @@ import pages from './pages.json';
 
 const Homepage = (function(doc) {
     const homepageContent = pages.find(obj => obj["id"]== 1);
-    const heroImages = require('./assets/images/hero-image.jpg?sizes[]=767,sizes[]=1920');
+    const heroImages = require(`${homepageContent['imageSrc']}?sizes[]=500,sizes[]=1920`);
     let mainContent = doc.querySelector('#content');
 
     function createHeroSection() {
@@ -10,7 +10,7 @@ const Homepage = (function(doc) {
         let heroWrapper = doc.createElement('section');
         heroWrapper.classList.add('hero-container');
         if(window.innerWidth <= 767) {
-            heroWrapper.style.setProperty('--hero-image',`url(${heroImages.images.find(image => image.width == 767).path})`);
+            heroWrapper.style.setProperty('--hero-image',`url(${heroImages.images.find(image => image.width == 500).path})`);
         }else {
             heroWrapper.style.setProperty('--hero-image',`url(${heroImages.images.find(image => image.width == 1920).path})`);
         }
@@ -68,9 +68,9 @@ const Homepage = (function(doc) {
         mainContent.append(createHeroSection(),createArticleContent());
     }
 
-    if (doc.readyState === 'loading') {
-        doc.addEventListener('DOMContentLoaded', addHomepageContent);
-      } else {
-        addHomepageContent();
-      }
+    return {
+        load: addHomepageContent
+    };
 })(document);
+
+export {Homepage};
