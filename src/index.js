@@ -4,6 +4,10 @@ import { Categories } from './categories.js';
 import { Contact } from './contact.js';
 import { Credits } from './credits.js';
 
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
+
 const initPage = (function(doc) {
     let mainContent, menuNavigation, navButtons, menuOpenBtn, menuCloseBtn; 
 
