@@ -161,6 +161,7 @@
   /*Footer*/
   --footer-top-desktop: 128px;
   --footer-top-mobile: 112px;
+  --footer-h: 52px;
   --footer-bg: var(--header-bg);
   --footer-color: var(--header-color);
   --footer-p-y: 1rem;
@@ -177,10 +178,6 @@
 
 body {
   background: var(--body-bg);
-}
-
-main {
-  min-height: calc(100vh - 40px);
 }
 
 .container {
@@ -453,6 +450,15 @@ footer a {
     text-decoration: underline;
   }
 
+    /*Main Content*/
+    main {
+      min-height: calc(100vh - var(--footer-h) - var(--footer-top-mobile));
+    }
+    
+    main.pt-h {
+      min-height: calc(100vh - var(--footer-h) - var(--footer-top-mobile) - var(--header-h));
+    }
+
   /*Footer*/ 
   footer {
     margin-top: var(--footer-top-mobile);
@@ -498,6 +504,15 @@ footer a {
 
   nav button:hover:before {
     transform: translateX(0);
+  }
+
+  /*Main Content*/
+  main {
+    min-height: calc(100vh - var(--footer-h) - var(--footer-top-desktop));
+  }
+  
+  main.pt-h {
+    min-height: calc(100vh - var(--footer-h) - var(--footer-top-desktop) - var(--header-h));
   }
 
   /*Cards*/

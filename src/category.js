@@ -5,6 +5,13 @@ const Category = (function(doc) {
     let heroImages;
     let mainContent = doc.querySelector('#content');
 
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     function createHeroSection() {
         // Create a container for hero content
         let heroWrapper = doc.createElement('section');
@@ -89,6 +96,7 @@ const Category = (function(doc) {
         let categoryParent = pages.find(obj => obj["id"] == Number(categoryId.toString().split('').shift()));
         categoryContent =  categoryParent['subpages'].find(obj => obj["id"]== categoryId);
         heroImages =require(`${categoryContent['imageSrc']}?sizes[]=500,sizes[]=1920`);
+        scrollToTop();
         addCategoryContent();
     }
 

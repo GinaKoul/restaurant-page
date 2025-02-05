@@ -7,6 +7,13 @@ import { Credits } from './credits.js';
 const initPage = (function(doc) {
     let mainContent, menuNavigation, navButtons, menuOpenBtn, menuCloseBtn; 
 
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     function menuOpen() {
         console.log(menuOpenBtn);
         menuNavigation.setAttribute('data-menu','open');
@@ -20,6 +27,7 @@ const initPage = (function(doc) {
         menuClose();
         mainContent.classList.remove('pt-h');
         mainContent.innerHTML = null;
+        scrollToTop();
     }
 
     function handleNavigation() {
