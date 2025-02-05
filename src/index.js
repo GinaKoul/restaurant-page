@@ -15,7 +15,6 @@ const initPage = (function(doc) {
     }
 
     function menuOpen() {
-        console.log(menuOpenBtn);
         menuNavigation.setAttribute('data-menu','open');
     }
 
