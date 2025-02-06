@@ -181,6 +181,21 @@
 
 body {
   background: var(--body-bg);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: 1/1;
+}
+
+main {
+  grid-area: 2/1;
+}
+
+footer {
+  grid-area: 3/1;
 }
 
 .container {
@@ -472,15 +487,6 @@ footer a {
     text-decoration: underline;
   }
 
-  /*Main Content*/
-  main {
-    min-height: calc(100vh - var(--footer-h) - var(--footer-top-mobile));
-  }
-  
-  main.pt-h {
-    min-height: calc(100vh - var(--footer-h) - var(--footer-top-mobile) - var(--header-h));
-  }
-
   /*Footer*/ 
   footer {
     margin-top: var(--footer-top-mobile);
@@ -526,15 +532,6 @@ footer a {
 
   nav button:hover:before {
     transform: translateX(0);
-  }
-
-  /*Main Content*/
-  main {
-    min-height: calc(100vh - var(--footer-h) - var(--footer-top-desktop));
-  }
-  
-  main.pt-h {
-    min-height: calc(100vh - var(--footer-h) - var(--footer-top-desktop) - var(--header-h));
   }
 
   /*Cards*/
