@@ -1,6 +1,6 @@
 # Il Forno Magico Restaurant Page
 
-> ##Table of Contents
+> ## Table of Contents
 - [Project Information](#project-information)
 - [Documentation](#documentation)
     - [Project Setup](#project-setup)
@@ -32,9 +32,9 @@ Last Build: 06/02/2025
 
 **Technologies Used:**
 
-**Webpack:** For bundling and compiling assets.
-**HTML, CSS, and JavaScript:** Core web technologies used to build the page.
-**Git:** For version control and collaboration.
+- **Webpack:** For bundling and compiling assets.
+- **HTML, CSS, and JavaScript:** Core web technologies used to build the page.
+- **[Git](https://pages.github.com/):** For version control.
 
 > ## Documentation
 
