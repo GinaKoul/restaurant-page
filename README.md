@@ -27,7 +27,7 @@ The Il Forno Magico restaurant page contains the following main sections:
 > ## Project information
 
 **Version:** 1.0.0\
-**Last Build:** 06/02/2025\
+**Last Build:** 06/02/2025
 
 **Technologies Used:**
 
