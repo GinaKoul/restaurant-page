@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
@@ -18,12 +19,13 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-            {
-                from: path.resolve(__dirname, "src/assets/fonts"),
-                to: path.resolve(__dirname, "dist/assets/fonts")
-            }
+                {
+                    from: path.resolve(__dirname, "src/assets/fonts"),
+                    to: path.resolve(__dirname, "dist/assets/fonts")
+                },
             ]
         }),
+        new FaviconsWebpackPlugin("src/assets/favicon/favicon.svg")
     ],
     module: {
         rules: [
