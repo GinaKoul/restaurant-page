@@ -1,11 +1,11 @@
 # Il Forno Magico Restaurant Page
 
 > ##Table of Contents
--[Project Information](#project-information)
--[Documentation](#documentation)
-    -[Project Setup](#project-setup)
-    -[Development Instructions](#development-instructions)
-    -[Deployment Instructions](#deployment-instructions)
+- [Project Information](#project-information)
+- [Documentation](#documentation)
+    - [Project Setup](#project-setup)
+    - [Development Instructions](#development-instructions)
+    - [Deployment Instructions](#deployment-instructions)
 
 Il Forno Magico Restaurant Page
 Welcome to the Il Forno Magico restaurant page project! 
@@ -35,9 +35,6 @@ Last Build: 06/02/2025
 **Webpack:** For bundling and compiling assets.
 **HTML, CSS, and JavaScript:** Core web technologies used to build the page.
 **Git:** For version control and collaboration.
-
-Table of Contents
-
 
 > ## Documentation
 
@@ -73,8 +70,8 @@ During development, you can use the following command to start the development s
 npm run dev
 ```
 
-This will compile and bundle your assets, launching a local development server.
-The project will be accessible in your browser at http://localhost:8080 by default.
+This will compile and bundle your assets, launching a local development server.\
+The project will be accessible in your browser at http://localhost:8080 by default.\
 It automatically reloads the page whenever you make changes to the source files.
 
 ### Deployment Instructions
