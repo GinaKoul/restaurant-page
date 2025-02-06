@@ -81,36 +81,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3356:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = {
-        srcSet: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"+" 16w",
-        images: [{path: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",width: 16,height: 16}],
-        src: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",
-        toString: function(){return __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"},
-        placeholder: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAwCdASooACgAPlEokUYjoqGhI4gAcAoJZwB2APwAAD56QHZaAAD+7ylH//z8zu3F/Vb//7B384D84D+igAAAAAA=",
-        width: 16,
-        height: 16
-      }
-
-/***/ }),
-
-/***/ 8233:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = {
-        srcSet: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"+" 16w",
-        images: [{path: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",width: 16,height: 16}],
-        src: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",
-        toString: function(){return __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"},
-        placeholder: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAwCdASooACgAPlEokUYjoqGhI4gAcAoJZwB2APwAAD56QHZaAAD+7ylH//z8zu3F/Vb//7B384D84D+igAAAAAA=",
-        width: 16,
-        height: 16
-      }
-
-/***/ }),
-
 /***/ 3910:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -2224,7 +2194,6 @@ var map = {
 	".": 7156,
 	"./": 7156,
 	"./assets/favicon/favicon.png": 9221,
-	"./assets/favicon/favicon.svg": 3356,
 	"./assets/fonts/Nunito-Bold.ttf": 1800,
 	"./assets/fonts/Nunito-BoldItalic.ttf": 8168,
 	"./assets/fonts/Nunito-Italic.ttf": 7187,
@@ -2295,7 +2264,6 @@ var map = {
 	".": 7009,
 	"./": 7009,
 	"./assets/favicon/favicon.png": 1414,
-	"./assets/favicon/favicon.svg": 8233,
 	"./assets/fonts/Nunito-Bold.ttf": 7037,
 	"./assets/fonts/Nunito-BoldItalic.ttf": 8541,
 	"./assets/fonts/Nunito-Italic.ttf": 372,
