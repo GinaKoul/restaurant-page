@@ -25,7 +25,7 @@ module.exports = {
                 },
             ]
         }),
-        new FaviconsWebpackPlugin("src/assets/favicon/favicon.svg")
+        new FaviconsWebpackPlugin("src/assets/favicon/favicon.png")
     ],
     module: {
         rules: [
