@@ -10,7 +10,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = `<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Document</title> </head> <body> <header> <div class="header-wrapper container"> <p class="logo">Il Forno Magico</p> <button class="menu-open">Menu trigger</button> <nav class="menu" data-menu="closed"> <button class="menu-close">&#x2715;</button> <button class="menu-nav" data-id="1">Home</button> <button class="menu-nav" data-id="2">Menu</button> <button class="menu-nav" data-id="3">Contact</button> <button class="menu-nav" data-id="4">Credits</button> </nav> </div> </header> <main id="content"></main> <footer> <div class="container"> <span>&copy Gina Kouliaki</span> </div> </footer> </body> </html>`;
+var code = `<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Il Forno Magico</title> </head> <body> <header> <div class="header-wrapper container"> <p class="logo">Il Forno Magico</p> <button class="menu-open">Menu trigger</button> <nav class="menu" data-menu="closed"> <button class="menu-close">&#x2715;</button> <button class="menu-nav" data-id="1">Home</button> <button class="menu-nav" data-id="2">Menu</button> <button class="menu-nav" data-id="3">Contact</button> <button class="menu-nav" data-id="4">Credits</button> </nav> </div> </header> <main id="content"></main> <footer> <div class="container"> <span>&copy Gina Kouliaki</span> </div> </footer> </body> </html>`;
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -25,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = `<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Document</title> </head> <body> <header> <div class="header-wrapper container"> <p class="logo">Il Forno Magico</p> <button class="menu-open">Menu trigger</button> <nav class="menu" data-menu="closed"> <button class="menu-close">&#x2715;</button> <button class="menu-nav" data-id="1">Home</button> <button class="menu-nav" data-id="2">Menu</button> <button class="menu-nav" data-id="3">Contact</button> <button class="menu-nav" data-id="4">Credits</button> </nav> </div> </header> <main id="content"></main> <footer> <div class="container"> <span>&copy Gina Kouliaki</span> </div> </footer> </body> </html>`;
+var code = `<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Il Forno Magico</title> </head> <body> <header> <div class="header-wrapper container"> <p class="logo">Il Forno Magico</p> <button class="menu-open">Menu trigger</button> <nav class="menu" data-menu="closed"> <button class="menu-close">&#x2715;</button> <button class="menu-nav" data-id="1">Home</button> <button class="menu-nav" data-id="2">Menu</button> <button class="menu-nav" data-id="3">Contact</button> <button class="menu-nav" data-id="4">Credits</button> </nav> </div> </header> <main id="content"></main> <footer> <div class="container"> <span>&copy Gina Kouliaki</span> </div> </footer> </body> </html>`;
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -48,6 +48,66 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ 9221:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = {
+        srcSet: __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp"+" 48w",
+        images: [{path: __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp",width: 48,height: 48}],
+        src: __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp",
+        toString: function(){return __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp"},
+        placeholder: "data:image/webp;base64,UklGRrIBAABXRUJQVlA4IKYBAADQCACdASooACgAPlEgjkSjoiEXGgWYOAUEsQBihdWA992+QCOAbYDPVetj9ADpQP21ccvH132iTODfhFK/87gyUeOcMs6ero35DUyyB2IgAP7ylS3QeBPGstnee1/3P/6M5P/1XmLeMmCwIP/6nGnQyj6nNi0QH/+4OMiORH8N/fhrbmpWnK3K0xv+C/jF9QIhQGiyX7WE9gH6Bunemwxltx76dsghEkahLZsnYKqwtHWio9P1mU7w/xNkc5AIX5w3yB5dvKhN/oVX43q7dOiGIiED3fUYvnCL09suas/+R0ohlYnnc/0qkHHsz3w42NM3D8bO5EDalOHHkYuZctVeJ0/ajhHtRK4z267ufylW/+Dz/Lv7wTnc2MLfyuaBivXEtLX+Z8uShl3REDrLw7nulR/PmGPQBaKQPOz53t+EHibwc6N03CiHSceDu4pMdNjOW//Sw+ttUtFGXAMQNIVDpDurmQ3glVfzlwl65S2spot81ijfgAdFD/wjZsxAvlZUcT02x27Bi9m1nMEF0D35BMDQimRxmRTLRvWOy97tRILAAAAAAA==",
+        width: 48,
+        height: 48
+      }
+
+/***/ }),
+
+/***/ 1414:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = {
+        srcSet: __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp"+" 48w",
+        images: [{path: __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp",width: 48,height: 48}],
+        src: __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp",
+        toString: function(){return __webpack_require__.p + "assets/images/8a6ab688fc9c7529-48.webp"},
+        placeholder: "data:image/webp;base64,UklGRrIBAABXRUJQVlA4IKYBAADQCACdASooACgAPlEgjkSjoiEXGgWYOAUEsQBihdWA992+QCOAbYDPVetj9ADpQP21ccvH132iTODfhFK/87gyUeOcMs6ero35DUyyB2IgAP7ylS3QeBPGstnee1/3P/6M5P/1XmLeMmCwIP/6nGnQyj6nNi0QH/+4OMiORH8N/fhrbmpWnK3K0xv+C/jF9QIhQGiyX7WE9gH6Bunemwxltx76dsghEkahLZsnYKqwtHWio9P1mU7w/xNkc5AIX5w3yB5dvKhN/oVX43q7dOiGIiED3fUYvnCL09suas/+R0ohlYnnc/0qkHHsz3w42NM3D8bO5EDalOHHkYuZctVeJ0/ajhHtRK4z267ufylW/+Dz/Lv7wTnc2MLfyuaBivXEtLX+Z8uShl3REDrLw7nulR/PmGPQBaKQPOz53t+EHibwc6N03CiHSceDu4pMdNjOW//Sw+ttUtFGXAMQNIVDpDurmQ3glVfzlwl65S2spot81ijfgAdFD/wjZsxAvlZUcT02x27Bi9m1nMEF0D35BMDQimRxmRTLRvWOy97tRILAAAAAAA==",
+        width: 48,
+        height: 48
+      }
+
+/***/ }),
+
+/***/ 3356:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = {
+        srcSet: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"+" 16w",
+        images: [{path: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",width: 16,height: 16}],
+        src: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",
+        toString: function(){return __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"},
+        placeholder: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAwCdASooACgAPlEokUYjoqGhI4gAcAoJZwB2APwAAD56QHZaAAD+7ylH//z8zu3F/Vb//7B384D84D+igAAAAAA=",
+        width: 16,
+        height: 16
+      }
+
+/***/ }),
+
+/***/ 8233:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = {
+        srcSet: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"+" 16w",
+        images: [{path: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",width: 16,height: 16}],
+        src: __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp",
+        toString: function(){return __webpack_require__.p + "assets/images/cf623c9c52322afe-16.webp"},
+        placeholder: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAwCdASooACgAPlEokUYjoqGhI4gAcAoJZwB2APwAAD56QHZaAAD+7ylH//z8zu3F/Vb//7B384D84D+igAAAAAA=",
+        width: 16,
+        height: 16
+      }
 
 /***/ }),
 
@@ -2163,6 +2223,8 @@ const initPage = (function(doc) {
 var map = {
 	".": 7156,
 	"./": 7156,
+	"./assets/favicon/favicon.png": 9221,
+	"./assets/favicon/favicon.svg": 3356,
 	"./assets/fonts/Nunito-Bold.ttf": 1800,
 	"./assets/fonts/Nunito-BoldItalic.ttf": 8168,
 	"./assets/fonts/Nunito-Italic.ttf": 7187,
@@ -2232,6 +2294,8 @@ webpackContext.id = 2611;
 var map = {
 	".": 7009,
 	"./": 7009,
+	"./assets/favicon/favicon.png": 1414,
+	"./assets/favicon/favicon.svg": 8233,
 	"./assets/fonts/Nunito-Bold.ttf": 7037,
 	"./assets/fonts/Nunito-BoldItalic.ttf": 8541,
 	"./assets/fonts/Nunito-Italic.ttf": 372,
