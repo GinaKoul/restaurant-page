@@ -7,8 +7,7 @@
     - [Development Instructions](#development-instructions)
     - [Deployment Instructions](#deployment-instructions)
 
-Il Forno Magico Restaurant Page
-Welcome to the Il Forno Magico restaurant page project! 
+Welcome to the Il Forno Magico restaurant page project!\
 It's built using Webpack to manage assets and streamline the development process.
 
 ***Link to Project:*** https://ginakoul.github.io/restaurant-page/
@@ -108,4 +107,4 @@ git status
 npm run deploy
 ```
 
-This will push the compiled and minified assets to the deployment platform.
+This will push the compiled and minified assets to the [gh-pages](https://github.com/GinaKoul/restaurant-page/tree/gh-pages) branch.
