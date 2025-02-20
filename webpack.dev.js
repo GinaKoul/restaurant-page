@@ -11,6 +11,6 @@ module.exports = merge(common, {
     },  
     devtool: "eval-source-map",
     devServer: {
-        watchFiles: ["./src/template.html"],
+        watchFiles: ["./src/assets/html/template.html"],
     },
 });

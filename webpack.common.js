@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src/assets/js/index.js",
     plugins: [
         new MiniCssExtractPlugin(),
         // new MiniCssExtractPlugin({
@@ -15,7 +15,7 @@ module.exports = {
         //     ignoreOrder: false,
         // }),
         new HtmlWebpackPlugin({
-            template: "./src/template.html",
+            template: "./src/assets/html/template.html",
         }),
         new CopyWebpackPlugin({
             patterns: [

@@ -1,0 +1,61 @@
+{
+  "id": 4,
+  "name": "credits",
+  "title": "Image Credits",
+  "subpages": [
+    {
+      "id": 41,
+      "title": "Photo by Nano Erdozain",
+      "link": "https://www.pexels.com/photo/chefs-enjoying-teamwork-in-a-rustic-kitchen-30338817/",
+      "imageSrc": "hero-image.jpg"
+    },
+    {
+      "id": 42,
+      "title": "Photo by Leeloo The First",
+      "link": "https://www.pexels.com/photo/close-up-photograph-of-bread-with-anchovies-5602606/",
+      "imageSrc": "appetizers.jpg"
+    },
+    {
+      "id": 43,
+      "title": "Photo by Jack Baghel",
+      "link": "https://www.pexels.com/photo/pot-of-soup-20408433/",
+      "imageSrc": "soups.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Photo by Aida Shukuhi",
+      "link": "https://www.pexels.com/photo/penne-alfredo-20234575/",
+      "imageSrc": "pasta.jpg"
+    },
+    {
+      "id": 45,
+      "title": "Photo by Piotr Arnoldes",
+      "link": "https://www.pexels.com/photo/assorted-tasty-pizzas-with-champignon-slices-and-arugula-leaves-6493572/",
+      "imageSrc": "pizza.jpg"
+    },
+    {
+      "id": 46,
+      "title": "Photo by hasan kurt",
+      "link": "https://www.pexels.com/photo/white-ceramic-mug-with-coffee-beside-brown-dried-leaf-10749578/",
+      "imageSrc": "steak.jpg"
+    },
+    {
+      "id": 47,
+      "title": "Photo by Shameel mukkath",
+      "link": "https://www.pexels.com/photo/close-up-of-a-bowl-of-salad-6271874/",
+      "imageSrc": "salad.jpg"
+    },
+    {
+      "id": 48,
+      "title": "Photo by Christopher Gaines",
+      "link": "https://www.pexels.com/photo/delicious-blueberry-yogurt-parfait-in-glass-bowl-30041626/",
+      "imageSrc": "desserts.jpg"
+    },
+    {
+      "id": 49,
+      "title": "Wines- Photo by Bastian Riccardi",
+      "link": "https://www.pexels.com/photo/red-wine-being-poured-into-a-glass-12584751/",
+      "imageSrc": "wine.jpg"
+    }
+  ]
+}

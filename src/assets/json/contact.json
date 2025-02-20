@@ -1,0 +1,23 @@
+{
+  "id": 3,
+  "name": "contact",
+  "title": "Contact Us",
+  "address": {
+    "title": "Address",
+    "content": {
+      "street": "Ooievaarsnest 33",
+      "city": "Ruisbroek",
+      "region": "Antwerp",
+      "postalCode": "2870",
+      "country": "Belgium"
+    }
+  },
+  "email": {
+    "title": "Email",
+    "content": "ilfornomagico@info.com"
+  },
+  "tel": {
+    "title": "Telephone Number",
+    "content": "038661819"
+  }
+}
