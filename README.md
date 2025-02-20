@@ -27,11 +27,13 @@ The Il Forno Magico restaurant page contains the following main sections:
 > ## Project information
 
 **Version:** 1.0.0\
-**Last Build:** 06/02/2025
+**Last Build:** 20/02/2025
 
 **Technologies Used:**
 
 - **Webpack:** For bundling and compiling assets.
+- **ESLint:** For Linting.
+- **Prettier:** For Formatting.
 - **HTML, CSS, and JavaScript:** Core web technologies used to build the page.
 - **[Git](https://pages.github.com/):** For version control.
 
@@ -61,6 +63,28 @@ npm install
 
 Once the dependencies are installed, you're all set to start working on the project!
 
+***Optional:*** Add the ESlint and Prettier extensions for VSCode
+
+#### Add ESlint extension
+
+- Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+
+```bash
+ext install dbaeumer.vscode-eslint
+```
+
+#### Add Prettier extension
+
+- Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+
+```bash
+ext install esbenp.prettier-vscode
+```
+
+- Go to Settings > Search Settings > Default Formatter > Editor: Default Formatter > Select Prettier
+
+- Go to Settings > Text Editor > Formatting > Format On Save > Select it
+
 ### Development Instructions
 
 During development, you can use the following command to start the development server:
@@ -76,6 +100,34 @@ It automatically reloads the page whenever you make changes to the source files.
 ### Deployment Instructions
 
 Once you've finished development and are ready to deploy your changes, follow these steps:
+
+#### Before Commit
+
+1. Check conflicting rules between eslint and prettier
+
+```bash
+npm run test-rules
+```
+
+2.  Scan code with style rules of eslint
+
+```bash
+npm run scan
+```
+
+3.  Check that files are already formatted
+
+```bash
+npm run test-format
+```
+
+4. Format all files with prettier
+
+```bash
+npm run format
+```
+
+#### Commit
 
 1. Add all changes:
 
@@ -100,8 +152,9 @@ git push origin main
 ```bash
 git status
 ```
+#### After Commit
 
-5. Deploy the changes. Run the following command to deploy:
+1. Deploy the changes. Run the following command to deploy:
 
 ```bash
 npm run deploy
