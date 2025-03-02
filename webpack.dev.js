@@ -9,7 +9,7 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist"),
         clean: true,
     },  
-    devtool: "eval-source-map",
+    devtool: "source-map",
     devServer: {
         watchFiles: ["./src/assets/html/template.html"],
     },
